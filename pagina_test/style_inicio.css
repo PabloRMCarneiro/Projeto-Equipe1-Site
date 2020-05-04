@@ -1,0 +1,23 @@
+
+.container{
+     border-radius: 25px;
+     border: 3px solid #05DBF2 ;
+     margin-top: auto;
+     margin-bottom: auto;
+     background-color: #0E0326;
+     
+
+}
+.collapse{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#button_ok{
+    background-color: #0E0326;
+    scrollbar-shadow-color: white;
+    transition: 0.5s; 
+    cursor: pointer; 
+    border: 2px solid #F28705;
+    
+}
