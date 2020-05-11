@@ -86,6 +86,14 @@ export default  function Login() {
               </Form.Control>
             </Form.Group>
           </Form>
+          <Form>
+          <div className="mb-3">
+            <Form.File id="formcheck-api-regular">
+              <Form.File.Label style= {{fontWeight:'bold'}}>Foto do Produto</Form.File.Label>
+              <Form.File.Input />
+            </Form.File>
+          </div>
+          </Form>
           <Button  onClick = {() => productsSubmit()} style={{ background: '#F20732', color: 'white', border: '0'}}  className="mt-3 mb-3  mx-auto">Cadastrar</Button>
         </div>
       </div>
