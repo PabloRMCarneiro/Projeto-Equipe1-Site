@@ -1,0 +1,14 @@
+.back{
+    
+    background-color: #262626;
+
+}
+.login{
+    background-color: #0439D9;
+    width: 420px;
+    height: 380px;
+    margin: auto;   
+    border-radius: 30px;
+    padding: 30px;
+    border: #056CF2 solid 2px;
+}
