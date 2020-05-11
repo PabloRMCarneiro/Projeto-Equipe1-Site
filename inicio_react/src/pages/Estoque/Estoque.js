@@ -29,10 +29,9 @@ export default  function Login() {
                     <Navbar.Brand  className = "justify-content-center " href="#home" style={{color: '#F20732', border: '0', fontSize:'25px'}}>Loja IN</Navbar.Brand>
                 <Nav className="mr-auto" >
                     <Nav.Link onClick = {() => productsSubmit()} style={{color: 'white'}}>Cadastrar Produtos</Nav.Link>
-                    <Nav.Link onClick = {() => colectionSubmit()} style={{color: 'white'}}>Coleção</Nav.Link>
                     <Nav.Link onClick = {() => registerSubmit()} style={{color: 'white'}}>Registrar novos usuários</Nav.Link>
                     <Dropdown>
-                        <Dropdown.Toggle style = {{background: 'none', border: '0'}} id="dropdown-basic">
+                        <Dropdown.Toggle style = {{background: 'none', border: '0', color:'#F20732'}} id="dropdown-basic">
                             Redes Sociais
                         </Dropdown.Toggle>
 
@@ -50,21 +49,22 @@ export default  function Login() {
                 </Form>
             </Navbar>
         </div> 
-        <div className = "mt-3 mx-5 d-flex flex-column " style = {{fontSize: '20px'}} >
-            <Nav className="justify-content-center " activeKey="/home">
-                <Nav.Item>
-                <Nav.Link eventKey="link-0">Verão</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                <Nav.Link eventKey="link-1">Primavera</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                <Nav.Link eventKey="link-2">Outono</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                <Nav.Link eventKey="link-3">Inverno</Nav.Link>
-                </Nav.Item>
-            </Nav>
+        <div className = "mt-3 mx-5 d-flex flex-column " style = {{fontSize: '20px', color: '#0439D9'}} >
+          <Nav justify variant="tabs" defaultActiveKey="/home">
+            <Nav.Item>
+              <Nav.Link eventKey="link-0">Verão</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-1">Inverno</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-2">Primavera</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-3">Outono</Nav.Link>
+               
+            </Nav.Item>
+          </Nav>
         </div>
     </div>
     );

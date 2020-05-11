@@ -86,10 +86,10 @@ export default  function Login() {
               </Form.Control>
             </Form.Group>
           </Form>
-          <Form>
-          <div className="mb-3">
-            <Form.File id="formcheck-api-regular">
-              <Form.File.Label style= {{fontWeight:'bold'}}>Foto do Produto</Form.File.Label>
+          <Form >
+          <div className="mb-3" >
+            <Form.File id="formcheck-api-regular" >
+              <Form.File.Label style= {{fontWeight:'bold'}} >Foto do Produto</Form.File.Label>
               <Form.File.Input />
             </Form.File>
           </div>
