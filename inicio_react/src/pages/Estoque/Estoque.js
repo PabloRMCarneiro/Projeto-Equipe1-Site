@@ -37,9 +37,9 @@ export default  function Login() {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Instagram</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Facebook</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Twitter</Dropdown.Item>
+                            <Dropdown.Item target="_blank" href="https://www.instagram.com/cpe.jr/">Instagram</Dropdown.Item>
+                            <Dropdown.Item href="https://www.facebook.com/cpejr/"  target="_blank">Facebook</Dropdown.Item>
+                            <Dropdown.Item href="https://www.linkedin.com/company/cpe-jr"  target="_blank">Linkedin</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </Nav>
