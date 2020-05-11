@@ -11,10 +11,10 @@ export default  function Login() {
  
     const [username, setUserName] = useState("")
     const [password, setPassword] = useState("")  
-  const history = useHistory()
- 
-  function productsSubmit(){
-    history.push('/estoque')
+    const history = useHistory()
+    
+    function productsSubmit(){
+        history.push('/estoque')
   }
 
 
