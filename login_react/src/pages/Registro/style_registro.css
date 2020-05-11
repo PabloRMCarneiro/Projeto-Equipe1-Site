@@ -1,0 +1,14 @@
+.back{
+    
+    background-color: #0D0D0D;
+
+}
+.registrar{
+    background-color: #056CF2;
+    width: 420px;
+    height: 450px;
+    margin: auto;   
+    border-radius: 30px;
+    border: #07038C solid 2px;
+    padding: 30px;
+}
