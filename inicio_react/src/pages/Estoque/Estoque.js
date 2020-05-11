@@ -14,7 +14,7 @@ export default  function Login() {
     history.push('/registro')
   }
   function productsSubmit(){
-    history.push('/novo_produtos')
+    history.push('/novos_produtos')
   }
   function colectionSubmit(){
     history.push('/colecao')
