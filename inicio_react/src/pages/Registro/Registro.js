@@ -6,6 +6,7 @@ import { AccountCircle, VpnKey } from '@material-ui/icons'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import BuildIcon from '@material-ui/icons/Build'
 import {useHistory} from 'react-router-dom'
+import logo_1 from '../logo/logo_1.png'
 
 export default  function Login() {
  
@@ -19,8 +20,9 @@ export default  function Login() {
 
 
   return (
-    <div className = " back h-100 d-flex flex-column ">
-      <h1 className="text-center" style={{ color: '#F20732', textAlign: 'center'}}>Loja IN</h1>
+    <div className = "h-100 d-flex flex-column ">
+      <div className="img" id="logo-registro"> <img src={logo_1}/></div>
+      
       <div className="registro d-flex justify-content-center flex-column">
         
         <h1 className="text-center mb-5" style={{ color: '#fff'}}>Registrar</h1>
@@ -82,7 +84,7 @@ export default  function Login() {
               
             />
           </InputGroup>
-          <Button  onClick = {() => registerSubmit()} style={{ background: '#F20732', color: 'white', border: '0'}}  className="mt-4  mx-auto">Registrar</Button>
+          <Button  onClick = {() => registerSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-4  mx-auto" size="lg" >Registrar</Button>
         </div>
       </div>
     </div>

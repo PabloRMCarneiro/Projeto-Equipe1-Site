@@ -1,5 +1,11 @@
 .back{
     
-    background-color: #262626;
+    background-color: #E4F0E0;
 
+}
+#logo-estoque{
+    width: 75px;
+    height: 75px;
+    image-rendering: optimizeQuality; 
+    max-width: 100%; 
 }

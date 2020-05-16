@@ -1,6 +1,6 @@
 import React, {useState}from 'react';
 import logo from '../../logo.svg';
-import './style_novos_produtos.css'
+import './style_descontar_produtos.css'
 import {InputGroup, FormControl, Button, Form} from 'react-bootstrap'
 import { AccountCircle, VpnKey } from '@material-ui/icons'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
@@ -20,11 +20,11 @@ export default  function Login() {
 
 
   return (
-    <div className = "h-100 d-flex flex-column ">
-      <div className="img" id = "logo-produtos"> <img src={logo_1}/></div>
-      <div className=" products d-flex justify-content-center flex-column">
+    <div className = " h-100 d-flex flex-column ">
+      <div className="img" id = "logo-descontar"> <img src={logo_1}/></div>
+      <div className="descontar d-flex justify-content-center flex-column">
         
-        <h1 className="text-center mb-5" style={{ color: '#fff'}}>Cadastrar Produtos</h1>
+        <h1 className="text-center mb-5" style={{ color: '#fff'}}>Descontar Produtos</h1>
 
         <div className="d-flex justify-content-center flex-column">
           <Form>
@@ -87,15 +87,8 @@ export default  function Login() {
               </Form.Control>
             </Form.Group>
           </Form>
-          <Form >
-          <div className="mb-3" >
-            <Form.File id="formcheck-api-regular" >
-              <Form.File.Label style= {{fontWeight:'bold', color: 'white'}} >Foto do Produto</Form.File.Label>
-              <Form.File.Input />
-            </Form.File>
-          </div>
-          </Form>
-          <Button  onClick = {() => productsSubmit()} style={{ background: '#F20732', color: 'white', border: '0'}}  className="mt-4 mb-3  mx-auto" size="lg" >Cadastrar</Button>
+         
+          <Button  onClick = {() => productsSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-4 mb-3  mx-auto" size="lg" >Descontar</Button>
         </div>
       </div>
     </div>
