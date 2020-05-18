@@ -82,15 +82,15 @@ export default  function Login() {
   return (
     <div className = " back h-100 d-flex flex-column ">
         <div className = "d-flex flex-column ">
-            <Navbar style = {{background: '#E4F0E0'}}>
+            <Navbar style = {{background: 'rgb(248, 248, 248)'}}>
                 <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
 
-                <Nav className="mr-auto" >
-                    <Nav.Link onClick = {() => productsSubmit()} style={{color: 'black'}}>Cadastrar Produtos</Nav.Link>
-                    <Nav.Link onClick = {() => decontarSubmit()} style={{color: 'black'}}>Descontar Produtos</Nav.Link>
-                    <Nav.Link onClick = {() => registerSubmit()} style={{color: 'black'}}>Registrar novos usuários</Nav.Link>
+                <Nav className="mr-auto" style={{color: 'black', fontSize: '20px'}}>
+                    <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos</Nav.Link>
+                    <Nav.Link onClick = {() => decontarSubmit()} >Descontar Produtos</Nav.Link>
+                    <Nav.Link onClick = {() => registerSubmit()} >Registrar novos usuários</Nav.Link>
                     <Dropdown>
-                        <Dropdown.Toggle style = {{background: 'none', border: '0', color:'#F20732'}} id="dropdown-basic">
+                        <Dropdown.Toggle style = {{background: 'none', border: '0', color:'#F20732', fontSize: '20px'}} id="dropdown-basic">
                             Redes Sociais
                         </Dropdown.Toggle>
 
@@ -108,7 +108,7 @@ export default  function Login() {
                 </Form>
             </Navbar>
         </div> 
-        <div className = "mt-4 mx-5 mb-4 d-flex flex-column " style = {{fontSize: '15px', color: '#0439D9'}} >
+        <div className = "mt-4 mx-5 mb-4 d-flex flex-column " style = {{fontSize: '15px', color: '#0439D9', }} >
           <Nav justify variant="tabs" defaultActiveKey="/home">
             <Nav.Item>
               <Nav.Link eventKey="link-0">Verão</Nav.Link>
@@ -124,7 +124,7 @@ export default  function Login() {
             </Nav.Item>
           </Nav>
         </div>
-        <div className={classes.root}>
+        <div className={classes.root} id = "back">
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -132,6 +132,7 @@ export default  function Login() {
             onChange={handleChange}
             aria-label="Vertical tabs example"
             className={classes.tabs}
+            id = "filtro"
           >
             <Tab label="Tudo" {...a11yProps(0)} />
             <Tab label="Camisas" {...a11yProps(1)} />
