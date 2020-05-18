@@ -6,6 +6,7 @@ import Registro from './pages/Registro/Registro'
 import Estoque from './pages/Estoque/Estoque'
 import Novos_produtos from './pages/Novos_produtos/Novos_produtos'
 import Descontar_produtos from './pages/Descontar_produtos/Descontar_produtos'
+
 export default function Routes(){
     return(
         <BrowserRouter>

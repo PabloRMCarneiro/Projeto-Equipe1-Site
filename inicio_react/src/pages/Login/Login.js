@@ -1,6 +1,6 @@
 import React, {useState}from 'react';
 import './style_login.css'
-import {InputGroup, FormControl, Button, Image} from 'react-bootstrap'
+import {InputGroup, FormControl, Button} from 'react-bootstrap'
 import { AccountCircle, VpnKey } from '@material-ui/icons'
 import {useHistory} from 'react-router-dom'
 import logo_1 from '../logo/logo_1.png'
