@@ -158,6 +158,7 @@ export default  function Login() {
             <Tab label="Tênis" {...a11yProps(6)} />
           </Tabs>
           <TabPanel value={value} index={0}>
+            <Coleção></Coleção>
           </TabPanel>
           <TabPanel value={value} index={1}>
           </TabPanel>
