@@ -35,11 +35,11 @@ export default  function Login() {
 
   return (
 
-    <div className = "back_login h-100 d-flex flex-column ">
+    <div className = "h-100 d-flex flex-column ">
       <div className="img" id = "logo-login"> <img src={logo_1}/></div>
        
       <div className="login d-flex justify-content-center flex-column">
-        <h1 className="text-center mb-5" style={{ color: '#fff'}}>Login</h1>
+        <h1 id="texto" className="text-center mb-10" style={{ color: '#fff'}}>Login</h1>
 
         <div className="d-flex justify-content-center flex-column" id = 'input'>
           <InputGroup className="mb-3">
@@ -68,8 +68,8 @@ export default  function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </InputGroup>
-          <Button  onClick = {() => handleSubmit()} style={{background: 'white', border: 0, color: 'rgb(56, 56, 56)'}} className="mt-4 col-3 mx-auto shadow-lg " size="lg">Entrar</Button>
-          <Button  onClick = {() => registerSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-4  mx-auto shadow-lg" size="lg">Registrar</Button>
+          <Button  onClick = {() => handleSubmit()} style={{background: 'white', border: 0, color: 'rgb(56, 56, 56)'}} className="mt-2 mx-auto shadow-lg " size="lg">Entrar</Button>
+          <Button  onClick = {() => registerSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-2  mx-auto shadow-lg" size="lg">Registrar</Button>
         </div>
       </div>
     </div>
