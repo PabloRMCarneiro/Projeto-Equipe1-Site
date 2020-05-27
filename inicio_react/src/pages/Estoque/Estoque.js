@@ -111,11 +111,15 @@ export default  function Login() {
   return (
     <div className = " back h-100 d-flex flex-column ">
         <div className = "d-flex flex-column ">
-            <Navbar style = {{background: 'rgb(248, 248, 248)'}}>
-                <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
+            <Navbar collapseOnSelect expand="lg" style = {{background: 'rgb(248, 248, 248)'}}>
+                <Navbar.Brand href="#siteDaLoja">
+                  <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
 
                 <Nav className="mr-auto "  style={{color: 'black', fontSize: '20px'}}>
-                    <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos <span class="border border-danger"></span> </Nav.Link>
+                    <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos</Nav.Link>
                     <Nav.Link onClick = {() => decontarSubmit()} >Descontar Produtos</Nav.Link>
                     <Nav.Link onClick = {() => registerSubmit()} >Registrar novos usuários</Nav.Link>
                     <Dropdown>
@@ -130,11 +134,10 @@ export default  function Login() {
                         </Dropdown.Menu>
                     </Dropdown>
                 </Nav>
-                <Form inline>
-                <FormControl type="text" placeholder="Pesquisar" className="mr-sm-2" />
-                <Button style={{ background: '#F20505', color: 'white', border: '0'}}  className="mr-sm-2">Buscar</Button>
-                <Button style={{ background: '#0439D9', color: 'white', border: '0'}}  className="mr-sm-2" onClick = {() => loginSubmit()}>Logout</Button>
-                </Form>
+                <Nav>
+                 <Button style={{ background: '#0439D9', color: 'white', border: '0'}}  className="mr-sm-2" onClick = {() => loginSubmit()}>Logout</Button>
+                </Nav>
+                </Navbar.Collapse>
             </Navbar>
         </div> 
        
