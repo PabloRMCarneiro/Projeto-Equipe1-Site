@@ -6,7 +6,7 @@ import { AccountCircle, VpnKey } from '@material-ui/icons'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import BuildIcon from '@material-ui/icons/Build'
 import {useHistory} from 'react-router-dom'
-import logo_1 from '../logo/logo_1.png'
+import logo_2 from '../logo/logo_2.png'
 
 export default  function Login() {
  
@@ -21,11 +21,12 @@ export default  function Login() {
 
   return (
     <div className = " h-100 d-flex flex-column ">
-      <div className="img" id = "logo-descontar"> <img src={logo_1}/></div>
-      <div className="descontar d-flex justify-content-center flex-column">
-        
-        <h1 className="text-center mb-5" style={{ color: '#fff'}}>Descontar Produtos</h1>
+      <div className="img" id = "logo-descontar">
+       <img src={logo_2}/><h1 className="text-center" style={{ color: '#fff'}}>Descontar Produtos</h1>
+      </div>
 
+
+      <div className="descontar d-flex justify-content-center flex-column">
         <div className="d-flex justify-content-center flex-column">
           <Form>
             <Form.Group controlId="exampleForm.SelectCustom">
@@ -88,7 +89,7 @@ export default  function Login() {
             </Form.Group>
           </Form>
          
-          <Button  onClick = {() => productsSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-4 mb-3  mx-auto" size="lg" >Descontar</Button>
+          <Button  onClick = {() => productsSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mx-auto" size="lg" >Descontar</Button>
         </div>
       </div>
     </div>
