@@ -32,9 +32,7 @@ function Coleção() {
     </Abas>
   );
 }
-            const container = document.createElement('div');
-            document.body.appendChild(container);
-            render(<Coleção />, container);
+        
 
 
 
