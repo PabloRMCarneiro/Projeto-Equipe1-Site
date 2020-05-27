@@ -1,3 +1,6 @@
+.body{
+    background-image: linear-gradient(to bottom, blue, red);
+}
 #logo-estoque{
     width: 75px;
     height: 75px;

@@ -6,7 +6,7 @@ import { AccountCircle, VpnKey } from '@material-ui/icons'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import BuildIcon from '@material-ui/icons/Build'
 import {useHistory} from 'react-router-dom'
-import logo_1 from '../logo/logo_1.png'
+import logo_2 from '../logo/logo_2.png'
 
 export default  function Login() {
  
@@ -21,13 +21,16 @@ export default  function Login() {
 
   return (
     <div className = "h-100 d-flex flex-column ">
-      <div className="img" id="logo-registro"> <img src={logo_1}/></div>
+      <div className="img" id="logo-registro">
+        <img src={logo_2}/><h1 className="text-center mb-2" style={{ color: 'white'}}>Registrar</h1>
+      </div>
       
       <div className="registro d-flex justify-content-center flex-column">
         
-        <h1 className="text-center mb-5" style={{ color: '#fff'}}>Registrar</h1>
+        
 
-        <div className="d-flex justify-content-center flex-column">
+        <div id="input" className="d-flex justify-content-center flex-column">
+          <h2 className="text-center mb-2" style={{ color: '#fff'}}>Novo usuário</h2>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="basic-addon1">
@@ -84,7 +87,7 @@ export default  function Login() {
               
             />
           </InputGroup>
-          <Button  onClick = {() => registerSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-4  mx-auto" size="lg" >Registrar</Button>
+          <Button  onClick = {() => registerSubmit()} style={{ background: '#F20505', color: 'white', border: '0'}}  className="mt-2  mx-auto" size="lg" >Registrar</Button>
         </div>
       </div>
     </div>

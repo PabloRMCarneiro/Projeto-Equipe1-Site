@@ -32,9 +32,8 @@ function Coleção() {
     </Abas>
   );
 }
-            const container = document.createElement('div');
-            document.body.appendChild(container);
-            render(<Coleção />, container);
+
+
 
 
 
@@ -115,7 +114,7 @@ export default  function Login() {
                 <Navbar.Brand href="#siteDaLoja">
                   <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
 
                 <Nav className="mr-auto "  style={{color: 'black', fontSize: '20px'}}>

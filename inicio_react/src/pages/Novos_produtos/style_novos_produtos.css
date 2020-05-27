@@ -1,23 +1,31 @@
-
-.products{
-    background-color: rgb(24, 54, 143);
-    width: 480px;
-    height: 650px;
-    margin-left: auto;
-    margin-right: auto;  
-    border-radius: 30px;
-    padding: 30px;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.39) ;
-}
 #logo-produtos{
-    width: 300px;
-    height: 300px;
+    width: 60%;
+    min-width: 300px;
+    max-width: 470px;
+    height: 35%;
+    max-height: 200px;
     align-items: center;
     display: flex;
     image-rendering: optimizeQuality; 
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
     margin-top: 20px;
     
+}
+
+.products{
+    background-color: rgb(27, 59, 156);
+    width: 60%;
+    min-width: 300px;
+    max-width: 420px;
+    height: 55%;
+    min-height: 470px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.39) ;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
 }
