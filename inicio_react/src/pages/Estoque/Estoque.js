@@ -1,5 +1,5 @@
 import React, {useState}from 'react'
-import {InputGroup, FormControl, Button, Navbar, Form, NavLink, Nav, Card, CardDeck, Dropdown} from 'react-bootstrap'
+import {InputGroup, FormControl, Button, Navbar, Form, NavLink, Nav, Card, CardDeck, Dropdown, Span} from 'react-bootstrap'
 import {useHistory} from 'react-router-dom'
 import './style_estoque.css'
 import { makeStyles } from '@material-ui/core/styles'
@@ -9,12 +9,41 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import PropTypes from 'prop-types'
 import logo_2 from '../logo/logo_2.png'
+import { render } from "react-dom";
+import Abas from '../Abas/Abas';
+require('../Abas/Abas.css');
+//import Produtos from '../Produtos'
+
+function Coleção() {
+  return (
+     <Abas>
+      <div label="Verão">
+        See ya later, <em>Alligator</em>!
+      </div>
+      <div label="Inverno">
+        After 'while, <em>Crocodile</em>!
+      </div>
+      <div label="Primaveira">
+        Nothing to see here, this tab is <em>extinct</em>!
+      </div>
+      <div label="Outono">
+        Nothing to see here, this tab is <em>extinct</em>!
+      </div>
+    </Abas>
+  );
+}
+            const container = document.createElement('div');
+            document.body.appendChild(container);
+            render(<Coleção />, container);
+
+
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
+    <div class = "container-fluid"
       role="tabpanel"
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
@@ -85,8 +114,8 @@ export default  function Login() {
             <Navbar style = {{background: 'rgb(248, 248, 248)'}}>
                 <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
 
-                <Nav className="mr-auto" style={{color: 'black', fontSize: '20px'}}>
-                    <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos</Nav.Link>
+                <Nav className="mr-auto "  style={{color: 'black', fontSize: '20px'}}>
+                    <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos <span class="border border-danger"></span> </Nav.Link>
                     <Nav.Link onClick = {() => decontarSubmit()} >Descontar Produtos</Nav.Link>
                     <Nav.Link onClick = {() => registerSubmit()} >Registrar novos usuários</Nav.Link>
                     <Dropdown>
@@ -108,22 +137,8 @@ export default  function Login() {
                 </Form>
             </Navbar>
         </div> 
-        <div className = "mt-4 mx-5 mb-4 d-flex flex-column " style = {{fontSize: '15px', color: '#0439D9', }} >
-          <Nav justify variant="tabs" defaultActiveKey="/home">
-            <Nav.Item>
-              <Nav.Link eventKey="link-0">Verão</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-1">Inverno</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-2">Primavera</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-3">Outono</Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </div>
+       
+        
         <div className={classes.root} id = "back">
           <Tabs
             orientation="vertical"
@@ -140,7 +155,7 @@ export default  function Login() {
             <Tab label="Short" {...a11yProps(3)} />
             <Tab label="Camiseta" {...a11yProps(4)} />
             <Tab label="Calça" {...a11yProps(5)} />
-            <Tab label="Tenis" {...a11yProps(6)} />
+            <Tab label="Tênis" {...a11yProps(6)} />
           </Tabs>
           <TabPanel value={value} index={0}>
           </TabPanel>
