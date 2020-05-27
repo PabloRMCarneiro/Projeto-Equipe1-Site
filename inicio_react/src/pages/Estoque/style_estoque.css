@@ -11,3 +11,7 @@
 #filtro{
     background: rgb(248, 248, 248);
 }
+#container{
+    padding-left: 50%;
+    background-repeat: no-repeat;
+}

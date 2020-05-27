@@ -6,7 +6,7 @@ import {useHistory} from 'react-router-dom'
 import logo_1 from '../logo/logo_1.png'
 
 export default  function Login() {
-  const usuario = 'pablocarneiro@cpejr.com.br'
+  const usuario = 'leticiaaraujo@cpejr.com.br'
   const senha = '123456789'
 
   const [username, setUserName] = useState("")
