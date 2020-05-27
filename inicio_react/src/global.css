@@ -3,6 +3,7 @@ html{
 }
 body{
     height: 100%;
+    background-image: linear-gradient(to bottom, rgb(27, 59, 156), rgb(89, 28, 202), rgb(231, 8, 8));
 }
 #root{
     height: 100%;
