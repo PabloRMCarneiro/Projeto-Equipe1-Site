@@ -1,6 +1,8 @@
 import React, {useState}from 'react'
 import {InputGroup, FormControl, Button, Navbar, Form, NavLink, Nav, Card, CardDeck, Dropdown, Span} from 'react-bootstrap'
 import {useHistory} from 'react-router-dom'
+import ReactDOM from 'react-dom';
+import Produto from '../Produtos/Produto'
 import './style_estoque.css'
 import { makeStyles } from '@material-ui/core/styles'
 import Tabs from '@material-ui/core/Tabs'
@@ -9,16 +11,27 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import PropTypes from 'prop-types'
 import logo_2 from '../logo/logo_2.png'
+import shortmasculinojacare from '../Imagens/shortmasculinojacare.jpg'
 import { render } from "react-dom";
 import Abas from '../Abas/Abas';
 require('../Abas/Abas.css');
-//import Produtos from '../Produtos'
+require('../Produtos/Produto.css');
 
+
+ReactDOM.render(
+  <Produto id = "01" nome = "Camisa Longa" quantidade = "25" tamanho = "m" imgg ="Imagem" />,
+  document.getElementById('root')
+);
+
+
+
+//serviceWorker.unregister();
 function Coleção() {
   return (
      <Abas>
       <div label="Verão">
-        See ya later, <em>Alligator</em>!
+      <Produto id = "01" nome = "Short Masculino Latas" quantidade = "25" tamanho = "m" imgg = { <img src={shortmasculinojacare}/>}/>
+      <Produto id = "02" nome = "Short Masculino Jacaré" quantidade = "1" tamanho = "P" imgg ="Imagem2" />
       </div>
       <div label="Inverno">
         After 'while, <em>Crocodile</em>!
