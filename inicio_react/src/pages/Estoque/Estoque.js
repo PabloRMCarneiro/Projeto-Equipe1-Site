@@ -170,7 +170,7 @@ export default  function Login() {
                 </Nav>
                 <Nav>
                     <Dropdown>
-                        <Dropdown.Toggle style = {{background: 'none', border: '0', color:'white', fontSize: '20px'}} id="dropdown-basic">
+                        <Dropdown.Toggle style = {{background: 'none', border: '0', fontWeight:'bold', color:'black', opacity:'70%', fontSize: '20px'}} id="dropdown-basic">
                             Redes Sociais
                         </Dropdown.Toggle>
 
