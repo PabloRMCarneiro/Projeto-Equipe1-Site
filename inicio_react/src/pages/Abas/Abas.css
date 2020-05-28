@@ -8,7 +8,7 @@
     
 }
 .tabs{
-
+color: rgb(141, 228, 152);
 }
   
   .tab-list-item {
@@ -18,7 +18,7 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1rem;
     font-weight: 450;
-    color: rgb(78, 163, 163);
+    color:rgb(78, 163, 163) ;
     margin-bottom: -1px;
     padding: 0.5rem 10%;
     
