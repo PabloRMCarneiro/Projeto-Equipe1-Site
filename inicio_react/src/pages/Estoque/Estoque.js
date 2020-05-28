@@ -11,7 +11,6 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import PropTypes from 'prop-types'
 import logo_2 from '../logo/logo_2.png'
-import shortmasculinojacare from '../Imagens/shortmasculinojacare.jpg'
 import { render } from "react-dom";
 import Abas from '../Abas/Abas';
 require('../Abas/Abas.css');
@@ -24,23 +23,57 @@ ReactDOM.render(
 );
 
 
-
-//serviceWorker.unregister();
 function Coleção() {
   return (
      <Abas>
       <div label="Verão">
-      <Produto id = "01" nome = "Short Masculino Latas" quantidade = "25" tamanho = "m" imgg = { <img src={shortmasculinojacare}/>}/>
-      <Produto id = "02" nome = "Short Masculino Jacaré" quantidade = "1" tamanho = "P" imgg ="Imagem2" />
+        <Produto id = "v1" nome = "Camisa Infantil" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/blusainfantil.jpg'/>}/>
+        <Produto id = "v2" nome = "Camisa AnimalPrint" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/animalprintcro.jpg'/>}/>
+        <Produto id = "v3" nome = "Camiseta Infantil Branca" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/camisetainfantilbranca.jpg'/>}/>
+        <Produto id = "v4" nome = "Camiseta Masculina Cinza" quantidade = "1" tamanho = "P" imgg = { <img src='/Imagens/camisetamasculinacinza.jpg'/>}/>
+        <Produto id = "v5" nome = "Short Masculino Jacaré" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/shortmasculinojacare.jpg'/>}/>
+        <Produto id = "v6" nome = "Short Masculino Latas" quantidade = "1" tamanho = "P" imgg = { <img src='/Imagens/shortmasculinolatas.jpg'/>}/>
+        <Produto id = "v7" nome = "Calça Feminina Colorida" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/calcafemininacolorida.jpg'/>}/>
+        <Produto id = "v8" nome = "Vestido Estampado" quantidade = "1" tamanho = "P" imgg = { <img src='/Imagens/vestestamp.jpg'/>}/>
+        <Produto id = "v9" nome = "Tênis Branco" quantidade = "1" tamanho = "P" imgg = { <img src='/Imagens/tenisbranco.jpg'/>}/>
+        <Produto id = "v10" nome = "Tênis Infantil Floral" quantidade = "1" tamanho = "P" imgg = { <img src='/Imagens/teniscinfantilfloral.jpg'/>}/>
+        <Produto id = "v11" nome = "Tênis Masculino Preto Nike" quantidade = "1" tamanho = "P" imgg = { <img src='/Imagens/tenismasculinopretonike.jpg'/>}/>
       </div>
       <div label="Inverno">
-        After 'while, <em>Crocodile</em>!
+        <Produto id = "03" nome = "Blusa de Frio Feminina" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/blusadefriofeminina.jpg'/>}/>
+        <Produto id = "03" nome = "Calça Moletom Masculina" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/calcamasculinamoletom.jpg'/>}/>
+        <Produto id = "03" nome = "Moletom Adidas" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/moletomadidas.jpg'/>}/>
+        <Produto id = "03" nome = "Moletom Colorido" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/moletomcolorido.jpg'/>}/>
+        <Produto id = "03" nome = "Camiseta Feminina Preta" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetafemininapreta.jpg'/>}/>
+        <Produto id = "03" nome = "Camiseta Masculina Rosa" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetamasculinarosa.jpg'/>}/>
+        <Produto id = "03" nome = "Short Feminino Couro" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/shortfemininocouro.jpg'/>}/>
+        <Produto id = "03" nome = "Tênis Masculino Cinza" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/tenismasculinocinza.jpg'/>}/>
+        <Produto id = "03" nome = "Tênis Rosa Glitter" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/tenisrosaglitter.jpg'/>}/>
+        <Produto id = "03" nome = "Vestido Verde" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/dressgreen.jpg'/>}/>
       </div>
       <div label="Primaveira">
-        Nothing to see here, this tab is <em>extinct</em>!
+        <Produto id = "03" nome = "Calça Jeans" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/calcajeans.jpg'/>}/> 
+        <Produto id = "03" nome = "Calça Pantacourt" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/pantacourt.jpg'/>}/>
+        <Produto id = "03" nome = "Camisa Feminina Onçinha" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetafemininaanimalprint.jpg'/>}/>
+        <Produto id = "03" nome = "Camisa Colorcoat" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/colorcoat.jpg'/>}/>
+        <Produto id = "03" nome = "Camiseta Friends Branca" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetafriendsbranca.jpg'/>}/>
+        <Produto id = "03" nome = "Short Masculino Tubarão" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/shortmasculinotubarao.jpg'/>}/>
+        <Produto id = "03" nome = "Short Masculino Unicórnio " quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/shortmasculinounicornio.jpg'/>}/>
+        <Produto id = "03" nome = "Tênis Colorido Feminino" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/teniscoloridofeminino.jpg'/>}/>
+        <Produto id = "03" nome = "Tênis Infantil" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/tenisinfantil.jpg'/>}/>
+        <Produto id = "03" nome = "Vestido Infantil" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/vestidoinfantil.jpg'/>}/>   
       </div>
       <div label="Outono">
-        Nothing to see here, this tab is <em>extinct</em>!
+        <Produto id = "03" nome = "Calça Masculina Militar" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/calcamasculinamilitar.jpg'/>}/>
+        <Produto id = "03" nome = "Calça Masculina Verde" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/calcamasculinaverde.jpg'/>}/>  
+        <Produto id = "03" nome = "Camisa Masculina Justa" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisamasculinajusta.jpg'/>}/>
+        <Produto id = "03" nome = "Camisa Feminina Trabalho" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetafemininatrabalho.jpg'/>}/>
+        <Produto id = "03" nome = "Camiseta Infantil Marrom" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetainfantilmarrom.jpg'/>}/>
+        <Produto id = "03" nome = "Camiseta Masculina Vermelha" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetamasculinavermelha.jpg'/>}/>
+        <Produto id = "03" nome = "Bermuda Jeans" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/bermjeans.jpg'/>}/>
+        <Produto id = "03" nome = "Short Feminino Adidas" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/shortfemininoadidas.jpg'/>}/>
+        <Produto id = "03" nome = "Tênis Masculino Militar" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/tenismasculinomilitar.jpg'/>}/>
+        <Produto id = "03" nome = "Tênis Preto Feminino" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/tenispretofeminino.jpg'/>}/>
       </div>
     </Abas>
   );
@@ -55,7 +88,7 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div class = "container-fluid"
+    <div className = "container-fluid"
       role="tabpanel"
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
@@ -123,14 +156,14 @@ export default  function Login() {
   return (
     <div className = " back h-100 d-flex flex-column ">
         <div className = "d-flex flex-column ">
-            <Navbar collapseOnSelect expand="lg" style = {{background: 'rgb(248, 248, 248)'}}>
+            <Navbar collapseOnSelect expand="lg" style = {{background:'linear-gradient(to bottom, rgb(83, 83, 204), rgb(185, 70, 70))'}}>
                 <Navbar.Brand href="#siteDaLoja">
                   <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
 
-                <Nav className="mr-auto "  style={{color: 'black', fontSize: '20px'}}>
+                <Nav className= "mr-auto" style={{color: '', fontSize: '20px', justifyContent:'space-evenly'}}>
                     <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos</Nav.Link>
                     <Nav.Link onClick = {() => decontarSubmit()} >Descontar Produtos</Nav.Link>
                     <Nav.Link onClick = {() => registerSubmit()} >Registrar novos usuários</Nav.Link>

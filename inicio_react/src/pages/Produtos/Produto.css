@@ -1,20 +1,28 @@
 
-elemento.produto{
+.bloco{
     border: rgb(78, 163, 163);
-    width: 650px;
-    height: 800px;
-    background: grey;
+    width: 280px;
+    height: 320px;
+    background: rgb(235, 215, 217);
+    inset-inline: 3px;
+    margin-bottom: 0.5%;
+    margin-right:  0.5%;
+    border-radius: 10px;
+    display: inline-block;
 }
 h5 {
+    text-align: center;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-weight: 10px;
     color: rgb(78, 163, 163);
-    padding-left: 1.5%;
+    
 }
-p {
+div.bloco p {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 14px;
     color: rgb(67, 95, 95);
-    padding-left: 1.5%;
     margin-bottom: 3px;
+    margin-top: 3%;
+    padding-left: 21%;
+    
 }

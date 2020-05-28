@@ -43,7 +43,7 @@ export default class Produto extends Component{
     render(){
         const {id, nome, tamanho,quantidade, imgg} = this.state
         return(
-            <div>
+            <div className = "bloco">
                 <p>  {imgg} </p>
                 <h5> {nome} </h5>
                 <p> ID: {id} </p>

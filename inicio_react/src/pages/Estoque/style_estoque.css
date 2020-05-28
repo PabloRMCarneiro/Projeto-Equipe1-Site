@@ -1,6 +1,4 @@
-.body{
-    background-image: linear-gradient(to bottom, blue, red);
-}
+
 #logo-estoque{
     width: 75px;
     height: 75px;
@@ -17,4 +15,12 @@
 #container{
     padding-left: 50%;
     background-repeat: no-repeat;
+}
+
+
+.tab{
+    color: white;
+    justify-content: space-evenly;
+   
+
 }
