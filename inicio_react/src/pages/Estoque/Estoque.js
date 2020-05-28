@@ -156,7 +156,7 @@ export default  function Login() {
   return (
     <div className = " back h-100 d-flex flex-column ">
         <div className = "d-flex flex-column ">
-            <Navbar collapseOnSelect expand="lg" style = {{background:'linear-gradient(to bottom, rgb(83, 83, 204), rgb(185, 70, 70))'}}>
+            <Navbar id='navbarzinha' collapseOnSelect expand="lg" style = {{background:'linear-gradient(to bottom, rgb(83, 83, 204), rgb(185, 70, 70))'}}>
                 <Navbar.Brand href="#siteDaLoja">
                   <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
                 </Navbar.Brand>
@@ -164,11 +164,13 @@ export default  function Login() {
                 <Navbar.Collapse id="responsive-navbar-nav">
 
                 <Nav className= "mr-auto" style={{color: '', fontSize: '20px', justifyContent:'space-evenly'}}>
-                    <Nav.Link onClick = {() => productsSubmit()} >Cadastrar Produtos</Nav.Link>
-                    <Nav.Link onClick = {() => decontarSubmit()} >Descontar Produtos</Nav.Link>
-                    <Nav.Link onClick = {() => registerSubmit()} >Registrar novos usuários</Nav.Link>
+                    <Nav.Link onClick = {() => productsSubmit()} style = {{color: 'white'}}>Cadastrar Produtos</Nav.Link>
+                    <Nav.Link onClick = {() => decontarSubmit()} style = {{color: 'white'}}>Descontar Produtos</Nav.Link>
+                    <Nav.Link onClick = {() => registerSubmit()} style = {{color: 'white'}}>Registrar novos usuários</Nav.Link>
+                </Nav>
+                <Nav>
                     <Dropdown>
-                        <Dropdown.Toggle style = {{background: 'none', border: '0', color:'#F20732', fontSize: '20px'}} id="dropdown-basic">
+                        <Dropdown.Toggle style = {{background: 'none', border: '0', fontWeight:'bold', color:'black', opacity:'70%', fontSize: '20px'}} id="dropdown-basic">
                             Redes Sociais
                         </Dropdown.Toggle>
 
@@ -178,9 +180,7 @@ export default  function Login() {
                             <Dropdown.Item href="https://www.linkedin.com/company/cpe-jr"  target="_blank">Linkedin</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                </Nav>
-                <Nav>
-                 <Button style={{ background: '#0439D9', color: 'white', border: '0'}}  className="mr-sm-2" onClick = {() => loginSubmit()}>Logout</Button>
+                 <Button style={{ background: 'red', color: 'white', border: '0'}}  className="mr-sm-2" onClick = {() => loginSubmit()}>Logout</Button>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>
