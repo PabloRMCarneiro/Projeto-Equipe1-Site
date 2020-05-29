@@ -285,8 +285,8 @@ export default  function Login() {
   }
   return (
     <div className = " back h-100 d-flex flex-column ">
-        <div id='divNavbarzinha' className = "d-flex flex-column ">
-            <Navbar id="navbarzinha" collapseOnSelect expand="lg" style = {{background:'linear-gradient(to bottom, rgb(83, 83, 204), rgb(185, 70, 70))'}}>
+        <div className = "d-flex flex-column ">
+            <Navbar id='navbarzinha' collapseOnSelect expand="lg" style = {{background:'linear-gradient(to bottom, rgb(83, 83, 204), rgb(185, 70, 70))'}}>
                 <Navbar.Brand href="#siteDaLoja">
                   <div className="img" id = "logo-estoque"> <img src={logo_2}/></div>
                 </Navbar.Brand>
