@@ -46,6 +46,17 @@ export default  function Login() {
             <InputGroup.Prepend>
             </InputGroup.Prepend>
             <FormControl
+              placeholder="Nome do Produto"
+              aria-label="Nome do Produto"
+              aria-describedby="basic-addon1"
+              onChange={(e) => setUserName(e.target.value)}
+              
+            />
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <InputGroup.Prepend>
+            </InputGroup.Prepend>
+            <FormControl
               placeholder="Código do Produto"
               aria-label="Código do Produto"
               aria-describedby="basic-addon1"
@@ -71,7 +82,6 @@ export default  function Login() {
             <FormControl
               placeholder="Tamanho"
               aria-label="Tamanho"
-              type = "number"
               aria-describedby="basic-addon1"
               onChange={(e) => setPassword(e.target.value)}
               
