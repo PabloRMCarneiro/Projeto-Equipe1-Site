@@ -18,9 +18,12 @@
 }
 
 
-.tab{
+.tabs{
     color: white;
     justify-content: space-evenly;
-   
+    min-height: 80vh;
 
+}
+.tab{
+    padding-top: 10%;
 }
