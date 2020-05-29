@@ -5,7 +5,7 @@
 
 .conteudo-aba {
   margin-left: 5%; 
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 100%;
   max-height: 480px;
   min-height: 80vh;

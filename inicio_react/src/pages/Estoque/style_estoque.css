@@ -1,10 +1,10 @@
-
 #logo-estoque{
     width: 75px;
     height: 75px;
     image-rendering: optimizeQuality; 
     max-width: 100%; 
 }
+
 #back{
     background: white;
 }
