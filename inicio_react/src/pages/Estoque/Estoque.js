@@ -127,6 +127,29 @@ const useStyles = makeStyles((theme) => ({
   },
   
 }));
+function Camisa() {
+  return (
+     <Abas>
+      <div label="Verão">
+        <Produto id = "v1" nome = "Camisa Infantil" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/blusainfantil.jpg'/>}/>
+        <Produto id = "v2" nome = "Camisa AnimalPrint" quantidade = "25" tamanho = "M" imgg = { <img src='/Imagens/animalprintcro.jpg'/>}/>
+      </div>
+      <div label="Inverno">
+        <Produto id = "03" nome = "Blusa de Frio Feminina" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/blusadefriofeminina.jpg'/>}/>
+        <Produto id = "03" nome = "Moletom Adidas" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/moletomadidas.jpg'/>}/>
+        <Produto id = "03" nome = "Moletom Colorido" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/moletomcolorido.jpg'/>}/>
+      </div>
+      <div label="Primaveira">
+        <Produto id = "03" nome = "Camisa Feminina Onçinha" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetafemininaanimalprint.jpg'/>}/>
+        <Produto id = "03" nome = "Camisa Colorcoat" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/colorcoat.jpg'/>}/>       
+      </div>
+      <div label="Outono">       
+        <Produto id = "03" nome = "Camisa Masculina Justa" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisamasculinajusta.jpg'/>}/>
+        <Produto id = "03" nome = "Camisa Feminina Trabalho" quantidade = "3" tamanho = "M/G/GG" imgg = { <img src='/Imagens/camisetafemininatrabalho.jpg'/>}/>
+      </div>
+    </Abas>
+  );
+}
 
 export default  function Login() {
      
@@ -209,6 +232,7 @@ export default  function Login() {
             <Coleção></Coleção>
           </TabPanel>
           <TabPanel value={value} index={1}>
+            <Camisa></Camisa>
           </TabPanel>
           <TabPanel value={value} index={2}>
           </TabPanel>
