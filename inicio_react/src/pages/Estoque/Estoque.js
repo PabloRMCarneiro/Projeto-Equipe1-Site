@@ -300,7 +300,7 @@ export default  function Login() {
                 </Nav>
                 <Nav>
                     <Dropdown>
-                        <Dropdown.Toggle style = {{background: 'none', border: '0', fontWeight:'bold', color:'black', opacity:'70%', fontSize: '20px'}} id="dropdown-basic">
+                        <Dropdown.Toggle style = {{background: 'none', border: '0', color:'white', fontSize: '20px'}} id="dropdown-basic">
                             Redes Sociais
                         </Dropdown.Toggle>
 
@@ -310,7 +310,7 @@ export default  function Login() {
                             <Dropdown.Item href="https://www.linkedin.com/company/cpe-jr"  target="_blank">Linkedin</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                 <Button style={{ background: 'red', color: 'white', border: '0'}}  className="mr-sm-2" onClick = {() => loginSubmit()}>Logout</Button>
+                 <Button style={{ background: 'red', color: 'white', border: '0', borderRadius: '10px'}}  className="mr-sm-2" onClick = {() => loginSubmit()}>Logout</Button>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>
